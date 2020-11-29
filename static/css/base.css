@@ -12,10 +12,26 @@ body {
 
 .rgba-black-light,
 .rgba-black-light:after {
-  background-color: rgba(0, 0, 0, 0.5);
-  min-height: calc(100vh - 140px);
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
+.nav-link {
+    display: block;
+    padding: .5rem .5rem;
+}
+
+.header-container {
+  padding-top: 140px;
+}
 
 /* from Bulma */
 .icon {
@@ -81,16 +97,17 @@ body {
     left: 0;
     z-index: 1030;
   }
-
+}
+@media (max-width: 991px) {
   .header-container {
-    padding-top: 140px;
+    padding-top: 0;
   }
 }
 
-@media (max-width: 991px) {
-  .rgba-black-light,
-  .rgba-black-light:after {
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height: 100vh;
+@media (max-width: 400px) {
+  .display-4 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 }
