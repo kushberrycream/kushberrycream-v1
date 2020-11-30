@@ -1,0 +1,66 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "bongs",
+      "friendly_name": "Bongs"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "dabbing_rigs",
+      "friendly_name": "Dabbing Rigs"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "kingsize_papers",
+      "friendly_name": "Kingsize Papers"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "pre-rolls",
+      "friendly_name": "Pre-Rolls"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "rolling_tips",
+      "friendly_name": "Rolling Tips"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "rolling_trays",
+      "friendly_name": "Rolling Trays"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "grinders",
+      "friendly_name": "Grinders"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "new_arrivals",
+      "friendly_name": "New Arrivals"
+    }
+  }
+]
