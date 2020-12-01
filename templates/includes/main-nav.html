@@ -31,9 +31,9 @@
         Glassware
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-        <a href="" class="dropdown-item">Bongs</a>
-        <a href="" class="dropdown-item">Dabbing Rigs</a>
-        <a href="" class="dropdown-item">All Glass</a>
+        <a href="{% url 'products' %}?category=bongs" class="dropdown-item">Bongs</a>
+        <a href="{% url 'products' %}?category=dabbing_rigs" class="dropdown-item">Dabbing Rigs</a>
+        <a href="{% url 'products' %}?category=bongs,dabbing_rigs" class="dropdown-item">All Glass</a>
       </div>
     </li>
 
@@ -49,10 +49,10 @@
         Rolling Papers
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-        <a href="" class="dropdown-item">Regular</a>
-        <a href="" class="dropdown-item">Pre-Rolls</a>
-        <a href="" class="dropdown-item">Tips</a>
-        <a href="" class="dropdown-item">All Papers</a>
+        <a href="{% url 'products' %}?category=kingsize_papers" class="dropdown-item">King Size</a>
+        <a href="{% url 'products' %}?category=pre-rolls" class="dropdown-item">Pre-Rolls</a>
+        <a href="{% url 'products' %}?category=rolling_tips" class="dropdown-item">Tips</a>
+        <a href="{% url 'products' %}?category=kingsize_papers,pre-rolls,rolling_tips" class="dropdown-item">All Papers</a>
       </div>
     </li>
 
@@ -68,16 +68,16 @@
         Accessories
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-        <a href="" class="dropdown-item">Grinders</a>
-        <a href="" class="dropdown-item">Rolling Trays</a>
-        <a href="" class="dropdown-item">All Accessories</a>
+        <a href="{% url 'products' %}?category=grinders" class="dropdown-item">Grinders</a>
+        <a href="{% url 'products' %}?category=rolling_trays" class="dropdown-item">Rolling Trays</a>
+        <a href="{% url 'products' %}?category=grinders,rolling_trays" class="dropdown-item">All Accessories</a>
       </div>
     </li>
 
     <li class="nav-item dropdown">
       <a
         class="logo-font font-weight-bold nav-link text-black"
-        href="#"
+        href="{% url 'products' %}?category=new_arrivals"
         id="new-arrivals-link"
       >
         New Arrivals
