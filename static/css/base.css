@@ -30,7 +30,7 @@ body {
 }
 
 .header-container {
-  padding-top: 140px;
+  padding-top: 180px;
 }
 
 /* from Bulma */
@@ -79,6 +79,16 @@ body {
   border: 1px solid black !important;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -100,7 +110,7 @@ body {
 }
 @media (max-width: 991px) {
   .header-container {
-    padding-top: 0;
+    padding-top: 116px;
   }
 }
 
