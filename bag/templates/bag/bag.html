@@ -38,10 +38,16 @@
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                        <a class="text-black" href="{% url 'product_detail' item.product.id %}">
+                                            <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                        </a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                        <p class="my-0">
+                                            <a class="text-black" href="{% url 'product_detail' item.product.id %}">
+                                                <strong>{{ item.product.name }}</strong>
+                                            </a>
+                                        </p>
                                         {% if item.product.has_sizes %}
                                         <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
                                         {% endif %}
@@ -54,7 +60,7 @@
                                         <p class="my-0">{{ item.quantity }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">£{{ item.product.price }}</p>
+                                        <p class="my-0">£{{ item.subtotal }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
