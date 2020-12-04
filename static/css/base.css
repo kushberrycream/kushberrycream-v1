@@ -115,10 +115,15 @@ a.category-badge > span.badge:hover {
   right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
   cursor: pointer;
 }
 
+.w-65 {
+    width: 65% !important;
+}
 #delivery-banner {
     box-shadow: -1px 4px 10px -1px rgba(0,0,0,0.7);
 }
