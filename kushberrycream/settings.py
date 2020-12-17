@@ -29,7 +29,7 @@ SECRET_KEY = '@zrbr7_2y+lnd6+6ga28bx!pb22znt*k44tmvn9$b*)_30666w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kushberrycream-headshop.herokuapp.com', 'localhost']
 
 
 # Application definition
